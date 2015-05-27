@@ -18,7 +18,7 @@ public class Equacao2Grau<a extends Number,b extends Number,c extends Number> {
     private c c;
     
     public Equacao2Grau(a a,b b,c c){
-        if(a.doubleValue() == 0){
+        if(a.equals(0)){
             throw new RuntimeException("O coeficiente 'a' não pode ser zero");
         }
         else{
